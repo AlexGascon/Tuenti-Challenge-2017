@@ -22,3 +22,6 @@ Challenge 10/ch10/*
 # Skipped challenges
 Challenge 6/*
 Challenge 9/*
+
+# Selenium drivers
+Challenge 7/geckodriver*
