@@ -56,6 +56,15 @@ Case #10: N/A
 Case #11: 5
 """
 
+"""
+PERSONAL NOTES
+
+The good part is that Python makes this challenge EXTREMELY easy. We just need to be careful with a few details related
+to the encoding (obviously), but apart from that, this challenge can be solved in just 20-30 lines of code (or even less
+if we sacrifice a bit of readability). This happens because, as we'll see, the built-in int() function does all the work
+related to the decoding of the string.
+"""
+
 import io
 
 is_test = False
@@ -64,7 +73,6 @@ if is_test:
 else:
     filenames = ('submitInput.txt', 'submitOutput.txt')
 
-# The good part is that Python makes this challenge EXTREMELY easy. We just need to be careful with a few details.
 # The first thing to be careful about is the encoding used when reading the input. We'll use utf-16, because using less
 # bits will result in information loss
 fin = io.open(filenames[0], mode='r', encoding='utf-16')
